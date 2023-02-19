@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kádár László</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+  <body>
+    <main>
+      <header>
+        <h1>PÉNZÜGYI ÜGYFELEINK</h1>
+      </header>
+      <nav class="menu">
+        <div class="container mt-3">
+          <ul class="nav nav-tabs" role ="tablist">
+            <li class="nav-item">
+				<a class="nav-link" href="#home"> Kezdőlap</a> </li>
+            <li class="nav-item">
+				<a class="nav-link" href="#menu1"> HR-osztály</a> </li>
+            <li class="nav-item">
+				<a class="nav-link active" href="#home"> Pénzügy</a> </li>
+            <li class="nav-item">
+				<a class="nav-link" href="#home"> Szervező</a> </li>
+            <li class="nav-item">
+				<a class="nav-link" href="#home"> Szövegelő</a> </li>
+          </ul>
+        </div>
+      </nav>
+
+      <article>
+         <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+              
+    
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="kepek/tizes.jpg" alt="" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="kepek/apro.jpg" alt="" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="kepek/ic.jpg" alt="" class="d-block w-100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+              
+			  
+			  <form action="form">
+				<p><label for="penzugy">Pénzkiszolgáló adatok:</label></p>
+				<textarea id="penzugy" name="penzugy" rows="4" cols="50">Kérlek írd ide a számlaszámod</textarea>
+				<br>
+				
+				<label for="fullname">Név(teljes):</label><br>
+				
+				<input type="text" id="fullname" name="fullname" value="Teljes név"><br>
+				<select name="select" id="select">
+				<option value="card">Bankkártya</option>
+				<option value="revolut">Revolut</option>
+				<option value="atutal">Átutalás</option>
+				<option value="banki">Banki átvétel</option>
+				</select>
+				<label for="adatok">Számlázási adatok</label><br>
+				<input type="text" id="adatok" name="adatok" value="bank név"><br>
+				<label for="teloszam">Telefonszam</label><br>
+				<input type="text" id="teloszam" name="teloszam" value="+36"><br>
+				<button type="button" onclick="alert('Sikeres beküldés')"></button>
+				<input type="submit" value="Küld">
+				<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active">Pénzügy Autómata</button><br>
+			  </form>
+
+      </article>
+      <aside> 
+
+          <div id="demo1" class="collapse">
+            
+          </div>
+		  
+		
+          <h2>Pénzügyi fal</h2>
+          <ol>
+          <li><p>BIZTOSAN A BANKJÁTÓL KAPOTT LEVELET?
+Bankszámlával kapcsolatos tájékoztatót kapott? Legyen körültekintő: nem minden az, aminek látszik! Különösen akkor legyen elővigyázatos, ha egy hivatalosnak tűnő banki e-mailben személyes vagy bankszámla adatait kérik – a bank ugyanis nem kér ilyen információkat sem levélben, sem e-mailben, ezért ezeket soha ne adja meg! Olvassa el az adathalász banki e-mailekről szóló tájékoztatónkat, hogy ne váljon kibercsalás áldozatává! >>></p>
+          </li>
+          
+		  <li><p>MEKKORA A VÍZLÁBNYOMUNK?
+Tudta, hogy bár a Föld 70%-át víz borítja, ennek mindössze 1%-a édesvíz? Vásárlásainkkal, tudatos döntéseinkkel hatással vagyunk bolygónk vízkészletének állapotára is. Olvassa el a Családi Zöld Pénzügyek cikkét, ismerje meg a vízlábnyom fogalmát, és tudja meg, hogyan csökkentheti azt! >>></p>
+          </li>
+        </ol>
+
+      </aside>
+
+      <footer>Kádár László</footer>
+    </main>
+  </body>
+</html>

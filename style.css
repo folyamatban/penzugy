@@ -1,0 +1,126 @@
+body{
+    background-image: radial-gradient(aqua,rgb(9, 186, 209),rgb(45, 149, 247),darkblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:auto ;
+    padding: 0px;
+}
+
+main {
+    margin: auto;
+    width: 80%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "h h "
+        "n n "
+        "as a"
+        "f f ";
+	background: rgb(125,212,206);
+	background: radial-gradient(circle, rgba(125,212,206,1) 0%, rgba(28,79,66,1) 100%);
+}
+
+button {
+    background-color:grey;
+    border: 2px grey;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    width: auto;
+}
+
+header {
+    background-color:blue;
+    border: 2px grey;
+    grid-area: h;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    width: auto;
+}
+ 
+header h1 {
+	text-transform: uppercase;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	color: black;
+	background-color: transparent;
+}
+
+nav a {
+	color: black !important;
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+	padding: 20px 30px;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+nav li:hover {
+	background-color: grey;
+}
+nav {
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-area: n;
+	background-color: black;
+	padding: 0 20px;
+	height: 80px;
+	text-decoration: none;
+	margin-right: 20px;
+	background: rgb(70,69,78);
+	background: linear-gradient(90deg, rgba(70,69,78,1) 0%, rgba(97,96,186,1) 16%, rgba(33,33,149,1) 35%, rgba(27,66,169,1) 47%, rgba(38,98,110,1) 100%);
+}
+
+  
+aside {
+   grid-area: as;
+}
+
+article {
+    grid-area: a;
+    border-radius: 20px;
+    margin: 20px;
+	padding:30px;
+    text-align: justify;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+    
+footer{
+	grid-area: f;
+	text-align: center;
+	background: rgb(120,85,100);
+	background: radial-gradient(circle, rgba(120,85,100,1) 0%, rgba(28,51,79,1) 100%);
+	margin: 10px;
+	padding: 20px;
+	color: black;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+  
+@media screen and (max-width: 700px) {
+    main{
+	grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "as"
+        "e"
+        "f"
+		width: 100%;
+		display: block;
+		margin-bottom: 40px;
+    }
+	nav li {
+      display: block;
+    }
+}
+  
